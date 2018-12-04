@@ -11,7 +11,11 @@
  */
 
 function sayHello() {
+  const canvas = document.getElementById('canvas1');
+  const ctx = canvas.getContext('2d');
 
+  ctx.font = '48px sans-serif';
+  ctx.strokeText('Hello, World!', 10, 50);
 }
 
 /*
@@ -39,6 +43,32 @@ function sayHello() {
 
 function drawRectangle() {
 
+  let width = Number(prompt("Enter a width greater than 1."))
+  let height = Number(prompt("Enter a height greater than 1."))
+  let x = Number(prompt("Enter an x coordinate greater than 5."))
+  let y = Number(prompt("Enter a y coordinate greater than 5."))
+
+  const canvas = document.getElementById('canvas2');
+  const ctx = canvas.getContext('2d');
+
+  if((width > 1 && width < 1024) && (height > 1 && height < 512) && (x > 5 && x < 1024) && (y > 5 && y < 512)){
+    ctx.strokeRect(x, y, width, height)
+  }
+  else if(width < 1) {
+    alert("Width value too small.")
+  }
+  else if(height < 1) {
+    alert("Height value too small.")
+  }
+  else if(x < 5) {
+    alert("X value too small.")
+  }
+  else if(y < 5) {
+    alert("Y value too small.")
+  }
+  else {
+    alert("Rectangle will not fit on canvas.")
+  }
 }
 
 /*
@@ -67,6 +97,43 @@ function drawRectangle() {
  */
 
 function drawColoredRectangle() {
+  const canvas = document.getElementById('canvas3');
+  const ctx = canvas.getContext('2d');
+
+  let color = prompt("Choose a color:");
+
+  if(color === "black"){
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.fillStyle = 'black';
+  }
+  else if(color === "blue") {
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.fillStyle = 'blue';
+    console.log(color)
+  }
+  else if(color === "green") {
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.fillStyle = 'green';
+  }
+  else if(color === "orange") {
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.fillStyle = 'orange';
+  }
+  else if(color === "purple") {
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.fillStyle = 'purple';
+  }
+  else if(color === "red") {
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.fillStyle = 'red';
+  }
+  else if(color === "yellow") {
+    ctx.fillRect(10, 10, 100, 50);
+    ctx.fillStyle = 'yellow';
+  }
+  else{
+    alert("Invalid color.");
+  }
 
 }
 
