@@ -103,33 +103,32 @@ function drawColoredRectangle() {
   let color = prompt("Choose a color:");
 
   if(color === "black"){
-    ctx.fillRect(10, 10, 100, 50);
     ctx.fillStyle = 'black';
+    ctx.fillRect(10, 10, 100, 50);
   }
   else if(color === "blue") {
-    ctx.fillRect(10, 10, 100, 50);
     ctx.fillStyle = 'blue';
-    console.log(color)
+    ctx.fillRect(10, 10, 100, 50);
   }
   else if(color === "green") {
-    ctx.fillRect(10, 10, 100, 50);
     ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, 100, 50);
   }
   else if(color === "orange") {
-    ctx.fillRect(10, 10, 100, 50);
     ctx.fillStyle = 'orange';
+    ctx.fillRect(10, 10, 100, 50);
   }
   else if(color === "purple") {
-    ctx.fillRect(10, 10, 100, 50);
     ctx.fillStyle = 'purple';
+    ctx.fillRect(10, 10, 100, 50);
   }
   else if(color === "red") {
-    ctx.fillRect(10, 10, 100, 50);
     ctx.fillStyle = 'red';
+    ctx.fillRect(10, 10, 100, 50);
   }
   else if(color === "yellow") {
-    ctx.fillRect(10, 10, 100, 50);
     ctx.fillStyle = 'yellow';
+    ctx.fillRect(10, 10, 100, 50);
   }
   else{
     alert("Invalid color.");
@@ -168,6 +167,8 @@ function drawColoredRectangle() {
 
 function drawTriangle() {
 
+  
+  
 }
 
 /*
