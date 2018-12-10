@@ -166,9 +166,15 @@ function drawColoredRectangle() {
  */
 
 function drawTriangle() {
+  const canvas = document.getElementById('canvas4');
+  const ctx = canvas.getContext('2d');
 
-  
-  
+  let fL = prompt("Pick a length for the first side of the right triangle.")
+  let sL = prompt("Pick a length for the second side of the right triangle.")
+  let tL = prompt("Pick al length for the third side of the right triangle.")
+
+  if()
+
 }
 
 /*
@@ -191,7 +197,8 @@ function drawTriangle() {
  */
 
 function drawSmileyFace() {
-
+  const canvas = document.getElementById('canvas5');
+  const ctx = canvas.getContext('2d');
 }
 
 /*
@@ -213,7 +220,8 @@ function drawSmileyFace() {
  */
 
 function drawStar() {
-
+  const canvas = document.getElementById('canvas6');
+  const ctx = canvas.getContext('2d');
 }
 
 /*
@@ -232,7 +240,8 @@ function drawStar() {
  */
 
 function drawStopSign() {
-
+  const canvas = document.getElementById('canvas7');
+  const ctx = canvas.getContext('2d');
 }
 
 /*
@@ -254,7 +263,8 @@ function drawStopSign() {
  */
 
 function drawPyramid() {
-
+  const canvas = document.getElementById('canvas8');
+  const ctx = canvas.getContext('2d');
 }
 
 /*
@@ -287,5 +297,6 @@ function drawPyramid() {
  */
 
 function drawHouse() {
-
+  const canvas = document.getElementById('canvas9');
+  const ctx = canvas.getContext('2d');
 }
