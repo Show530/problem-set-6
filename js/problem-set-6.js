@@ -168,13 +168,21 @@ function drawColoredRectangle() {
 function drawTriangle() {
   const canvas = document.getElementById('canvas4');
   const ctx = canvas.getContext('2d');
+  ctx.clearRect =  (0, 0, 1024, 512)
 
   let fL = prompt("Pick a length for the first side of the right triangle.")
   let sL = prompt("Pick a length for the second side of the right triangle.")
   let tL = prompt("Pick al length for the third side of the right triangle.")
+  fL = Number(fL)
+  sL = Number(sL)
+  tL = Number(tL)
+  fL = fL + 10
+  sL = sL + 10
+  tL = tL + 10
 
-  if()
 
+
+   
 }
 
 /*
@@ -242,6 +250,8 @@ function drawStar() {
 function drawStopSign() {
   const canvas = document.getElementById('canvas7');
   const ctx = canvas.getContext('2d');
+
+  
 }
 
 /*
